@@ -77,7 +77,7 @@ relativo dipartimento, in ordine alfabetico per cognome e nome
 
 
 
-	SELECT `teachers`.`name` AS `name`, `teachers`.`surname` AS `surname`, `departments`.`name` AS `departments`
+	SELECT DISTINCT `teachers`.`name` AS `name`, `teachers`.`surname` AS `surname`, `departments`.`name` AS `departments`
 	FROM `teachers`
 
 	INNER JOIN `course_teacher` 
